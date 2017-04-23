@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# order: wordpress_test root 'wordpress' localhost latest
+# order: latest wordpress_test root 'wordpress' localhost
 
-DB_NAME=${1-wordpress_test}
-DB_USER=${2-root}
-DB_PASS=${3-''}
-DB_HOST=${4-localhost}
-WP_VERSION=${5-latest}
+WP_VERSION=${1-latest}
+DB_NAME=${2-wordpress_test}
+DB_USER=${3-root}
+DB_PASS=${4-''}
+DB_HOST=${5-localhost}
 #SKIP_DB_CREATE=${6-false}
 
 # set DB_PASS with -p argument to send it mysql command if set DB_PASS
